@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+        http://www.liquibase.org/xml/ns/dbchangelog-ext
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <include file="/db/changelog/changes/create-role-1.xml"/>
+    <include file="/db/changelog/changes/insert-role-admin-3.xml"/>
+    <include file="/db/changelog/changes/insert-role-author-2.xml"/>
+    <include file="/db/changelog/changes/create-topic-news-4.xml"/>
+    <include file="/db/changelog/changes/create-text-of-news-5.xml"/>
+    <include file="/db/changelog/changes/create-author-6.xml"/>
+    <include file="/db/changelog/changes/create-news-7.xml"/>
+    <include file="/db/changelog/changes/create-author-news-8.xml"/>
+    <include file="/db/changelog/changes/insert-author-value-9.xml"/>
+    <include file="/db/changelog/changes/insert-topic-news-5values-10.xml"/>
+    <include file="/db/changelog/changes/insert-value-into-news-11.xml"/>
+
+</databaseChangeLog>

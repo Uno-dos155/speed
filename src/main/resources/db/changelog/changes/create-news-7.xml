@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <changeSet author="admin" id="8">
+        <createTable tableName="news">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="date_news" type="date">
+                <constraints nullable="true"/>
+            </column>
+            <column name="topic_news_id" type="INT">
+                <constraints nullable="false" foreignKeyName="fk_news_topic" references="topic_news(id)"/>
+            </column>
+            <column name="text_news_id" type="INT">
+                <constraints nullable="false" foreignKeyName="fk_news_text" references="text_of_news(id)"/>
+            </column>
+        </createTable>
+        <rollback>
+            <dropTable tableName="news"/>
+        </rollback>
+    </changeSet>
+
+</databaseChangeLog>
