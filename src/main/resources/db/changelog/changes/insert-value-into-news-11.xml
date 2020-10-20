@@ -7,15 +7,12 @@
     http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
   <changeSet author="admin" id="12">
-    <insert tableName="text_of_news">
-      <column name="id" valueNumeric="1"/>
-      <column name="content" value="Washington (CNN)Democratic presidential nominee"/>
-    </insert>
     <insert tableName="news">
       <column name="id" valueNumeric="1"/>
       <column name="date_news" value="2020-02-02"/>
       <column name="topic_news_id" valueNumeric="1"/>
-      <column name="text_news_id" valueNumeric="1"/>
+      <column name="title_news" value="Politics"/>
+      <column name="text_news" value="In USA politics war"/>
     </insert>
 
   </changeSet>

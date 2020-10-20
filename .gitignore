@@ -31,3 +31,5 @@ build/
 
 ### VS Code ###
 .vscode/
+logging.level.org.springframework.jdbc.core.JdbcTemplate=DEBUG
+logging.level.org.springframework.jdbc.core.StatementCreatorUtils=TRACE

@@ -10,7 +10,7 @@
     <include file="/db/changelog/changes/insert-role-admin-3.xml"/>
     <include file="/db/changelog/changes/insert-role-author-2.xml"/>
     <include file="/db/changelog/changes/create-topic-news-4.xml"/>
-    <include file="/db/changelog/changes/create-text-of-news-5.xml"/>
+
     <include file="/db/changelog/changes/create-author-6.xml"/>
     <include file="/db/changelog/changes/create-news-7.xml"/>
     <include file="/db/changelog/changes/create-author-news-8.xml"/>

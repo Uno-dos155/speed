@@ -13,6 +13,8 @@
       <column name="surname" value="smagulov"/>
       <column name="email" value="dara@mail.ru"/>
       <column name="tel" value="515151"/>
+      <column name="gender" value="MALE"/>
+      <column name="iin" value="1212113223"/>
       <column name="role_id" valueNumeric="1"/>
     </insert>
   </changeSet>

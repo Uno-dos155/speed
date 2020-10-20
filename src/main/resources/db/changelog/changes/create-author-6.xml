@@ -23,6 +23,12 @@
             <column name="tel" type="VARCHAR(255)">
                 <constraints nullable="false"/>
             </column>
+            <column name="gender" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="iin" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
             <column name="role_id" type="INT">
                 <constraints nullable="false" foreignKeyName="fk_role_author" references="role(id)"/>
             </column>

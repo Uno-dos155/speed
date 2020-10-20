@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<form action="#" th:action="@{/author-create}" th:object="${author}" method="post">
+  <label for="firstName">First name</label>
+  <input type="text" th:field="*{name}" id="firstName" placeholder="First Name">
+  <label for="lastName">surname</label>
+  <input type="text" th:field="*{surname}" id="lastName" placeholder="Last Name">
+  <label for="lastName">email</label>
+  <input type="text" th:field="*{email}" id="lastName" placeholder="email">
+  <label for="lastName">telephone</label>
+  <input type="text" th:field="*{tel}" id="lastName" placeholder="Last Name">
+
+  <select th:field="*{gender}">
+    <option th:value="'MALE'" th:text="Male"></option>
+    <option th:value="'FEMALE'" th:text="Female"></option>
+  </select>
+  <label for="lastName">iin</label>
+  <input type="text" th:field="*{iin}" id="lastName" placeholder="iin">
+  <input type="submit" value="Create User">
+</form>
+</body>
+</html>

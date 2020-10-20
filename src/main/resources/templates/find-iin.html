@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<form action="#" th:action="@{/iin-find}" th:object="${author}" method="post">
+  <label for="firstName">iin</label>
+  <input type="text" th:field="*{iin}" id="firstName" placeholder="First Name">
+  <input type="submit" value="find author">
+</form>
+</body>
+</html>

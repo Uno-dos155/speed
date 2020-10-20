@@ -25,19 +25,12 @@ Hello!!!
         <td th:text="${author.id}"></td>
         <td th:text="${author.name}"></td>
         <td th:text="${author.email}"></td>
-        <td><a th:href="@{author-update/{id}(id=${author.id})}">Edit</a></td>
-        <td><a th:href="@{author-delete/{id}(id=${author.id})}">Delete</a></td>
 
       </tr>
       </tbody>
     </table>
   </div>
 </div>
-<p><a href="/author-form">Create author</a></p>
-<p><a href="/create">Create news</a></p>
-<p><a href="/find-email">search by email</a></p>
-<p><a href="/find-iin">search by iin</a></p>
-<p><a href="/find-role">search by role</a></p>
-<p><a href="/find-gender">search by gender</a></p>
+
 </body>
 </html>

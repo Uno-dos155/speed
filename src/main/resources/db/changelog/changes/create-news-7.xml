@@ -14,11 +14,14 @@
             <column name="date_news" type="date">
                 <constraints nullable="true"/>
             </column>
+            <column name="title_news" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="text_news" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
             <column name="topic_news_id" type="INT">
                 <constraints nullable="false" foreignKeyName="fk_news_topic" references="topic_news(id)"/>
-            </column>
-            <column name="text_news_id" type="INT">
-                <constraints nullable="false" foreignKeyName="fk_news_text" references="text_of_news(id)"/>
             </column>
         </createTable>
         <rollback>
